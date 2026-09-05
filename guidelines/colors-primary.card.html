@@ -1,0 +1,14 @@
+<!-- @dsCard group="Colors" viewport="700x200" subtitle="Primary + secondary accent" name="Accent colors" -->
+<html><head><link rel="stylesheet" href="../styles.css"><style>
+body{background:var(--bg);padding:24px;font-family:var(--font-heading)}
+.row{display:flex;gap:16px}
+.sw{flex:1;height:120px;border-radius:var(--radius-md);display:flex;flex-direction:column;justify-content:flex-end;padding:12px;color:var(--text-on-accent);font-size:var(--text-xs)}
+.label{font-weight:var(--weight-semibold);font-size:var(--text-sm)}
+</style></head><body>
+<div class="row">
+  <div class="sw" style="background:var(--accent)"><div class="label">Accent</div>--accent #35D0C0</div>
+  <div class="sw" style="background:var(--accent-strong)"><div class="label">Accent Strong</div>--accent-strong</div>
+  <div class="sw" style="background:var(--accent-warm);color:var(--text-on-accent)"><div class="label">Accent Warm</div>--accent-warm #E0995B</div>
+  <div class="sw" style="background:var(--accent-dim);color:var(--accent)"><div class="label">Accent Dim</div>--accent-dim (10% fill)</div>
+</div>
+</body></html>

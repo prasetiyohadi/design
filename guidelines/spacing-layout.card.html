@@ -1,0 +1,8 @@
+<!-- @dsCard group="Spacing" viewport="700x200" subtitle="Reading column vs wide layout" name="Content widths" -->
+<html><head><link rel="stylesheet" href="../styles.css"><style>
+body{background:var(--bg);padding:24px;font-family:var(--font-mono);font-size:var(--text-xs);color:var(--text-secondary)}
+.bar{height:36px;background:var(--surface);border:1px dashed var(--border-strong);border-radius:var(--radius-sm);display:flex;align-items:center;padding:0 12px;margin-bottom:12px}
+</style></head><body>
+<div class="bar" style="width:var(--content-width)">--content-width: 700px (prose)</div>
+<div class="bar" style="width:min(100%,var(--content-width-wide))">--content-width-wide: 1040px (diagrams, tables)</div>
+</body></html>

@@ -1,0 +1,24 @@
+import React from 'react';
+
+/** PostCard — article preview used on homepage and index/list pages. */
+export function PostCard({ title, excerpt, date, readTime, tags = [] }) {
+  return (
+    <a href="#" style={{
+      display: 'block', padding: 'var(--space-6) 0', borderBottom: '1px solid var(--border-hairline)',
+      textDecoration: 'none', color: 'inherit',
+    }}>
+      <div style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-xl)', fontWeight: 600, color: 'var(--text-primary)', marginBottom: 8, letterSpacing: 'var(--tracking-tight)' }}>
+        {title}
+      </div>
+      <p style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--text-base)', color: 'var(--text-secondary)', lineHeight: 'var(--leading-body)', margin: '0 0 14px', maxWidth: '62ch' }}>
+        {excerpt}
+      </p>
+      <div style={{ display: 'flex', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
+        <span style={{ fontFamily: 'var(--font-heading)', fontSize: 'var(--text-xs)', color: 'var(--text-tertiary)', letterSpacing: 'var(--tracking-wide)', textTransform: 'uppercase' }}>{date} · {readTime}</span>
+        {tags.map((t) => (
+          <span key={t} style={{ fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', color: 'var(--accent)' }}>#{t}</span>
+        ))}
+      </div>
+    </a>
+  );
+}

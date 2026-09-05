@@ -1,0 +1,97 @@
+<!-- @dsCard group="About" viewport="1040x900" subtitle="About + consulting, dark + light" name="About & consulting" -->
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<title>About — Pras' Labs</title>
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  body { margin: 0; }
+  .shell { max-width: var(--page-max-width); margin: 0 auto; padding: 0 var(--space-6); }
+  nav.top { display: flex; align-items: center; justify-content: space-between; padding: var(--space-5) 0; border-bottom: 1px solid var(--border-hairline); }
+  .wordmark { font-family: var(--font-mono); font-weight: 600; font-size: var(--text-sm); color: var(--text-primary); text-decoration: none; }
+  .navlinks { display: flex; gap: 28px; }
+  .navlinks a { font-family: var(--font-heading); font-size: var(--text-sm); font-weight: 500; color: var(--text-secondary); text-decoration: none; padding-bottom: 4px; border-bottom: 2px solid transparent; }
+  .navlinks a.active { color: var(--text-primary); border-color: var(--accent); }
+  .theme-toggle { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--text-tertiary); background: var(--surface); border: 1px solid var(--border-strong); border-radius: var(--radius-sm); padding: 6px 10px; cursor: pointer; }
+
+  main { max-width: var(--content-width); margin: var(--space-8) auto var(--space-9); }
+  .bio-full { display: flex; gap: 20px; align-items: flex-start; margin-bottom: var(--space-8); }
+  .avatar { width: 72px; height: 72px; border-radius: 999px; flex-shrink: 0; border: 1px solid var(--accent-warm-border); object-fit: cover; }
+  .bio-full h1 { font-family: var(--font-heading); font-size: var(--text-2xl); font-weight: 700; color: var(--text-primary); margin: 0 0 4px; }
+  .bio-full .role { font-family: var(--font-heading); font-size: var(--text-sm); color: var(--accent-warm); text-transform: uppercase; letter-spacing: var(--tracking-wide); margin-bottom: 10px; }
+  .bio-full p { font-family: var(--font-body); font-size: var(--text-base); color: var(--text-secondary); line-height: var(--leading-body); margin: 0; max-width: 58ch; }
+
+  h2 { font-family: var(--font-heading); font-size: var(--text-xl); font-weight: 600; color: var(--text-primary); margin: 0 0 var(--space-4); }
+  p.body { font-family: var(--font-body); font-size: var(--text-base); line-height: var(--leading-body); color: var(--text-primary); margin: 0 0 var(--space-5); }
+
+  .services { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); margin-bottom: var(--space-8); }
+  .service { border: 1px solid var(--border-hairline); border-radius: var(--radius-md); padding: var(--space-5); background: var(--surface); }
+  .service .n { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--accent); margin-bottom: 8px; }
+  .service h3 { font-family: var(--font-heading); font-size: var(--text-base); font-weight: 600; color: var(--text-primary); margin: 0 0 6px; }
+  .service p { font-family: var(--font-body); font-size: var(--text-sm); color: var(--text-secondary); margin: 0; line-height: var(--leading-body); }
+
+  .stack { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: var(--space-8); }
+  .stack .tag { font-family: var(--font-mono); font-size: var(--text-xs); padding: 4px 10px; border-radius: var(--radius-full); border: 1px solid var(--border-strong); color: var(--text-secondary); }
+
+  .cta { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: space-between; padding: var(--space-6); border: 1px solid var(--accent-border); border-radius: var(--radius-md); background: var(--accent-dim); }
+  .cta h3 { font-family: var(--font-heading); font-weight: 600; font-size: var(--text-lg); color: var(--text-primary); margin: 0 0 6px; }
+  .cta p { font-family: var(--font-body); font-size: var(--text-sm); color: var(--text-secondary); margin: 0; max-width: 44ch; }
+  .cta a.btn { font-family: var(--font-heading); font-weight: 600; font-size: var(--text-sm); color: var(--text-on-accent); background: var(--accent); padding: 10px 18px; border-radius: var(--radius-sm); text-decoration: none; white-space: nowrap; }
+
+  .contact { margin-top: var(--space-6); font-family: var(--font-mono); font-size: var(--text-sm); color: var(--text-secondary); }
+  .contact a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="shell">
+  <nav class="top">
+    <a class="wordmark" href="#"><span style="color:var(--accent)">~/</span>pras-labs</a>
+    <div class="navlinks">
+      <a href="#">Writing</a>
+      <a class="active" href="#">About</a>
+      <a href="#">Consulting</a>
+    </div>
+    <button class="theme-toggle" onclick="document.documentElement.dataset.theme = document.documentElement.dataset.theme==='dark'?'light':'dark'">toggle theme</button>
+  </nav>
+
+  <main>
+    <div class="bio-full">
+      <img class="avatar" src="../../assets/pras.jpg" alt="Prasetiyo Hadi Purwoko">
+      <div>
+        <h1>Prasetiyo Hadi Purwoko</h1>
+        <div class="role">Platform & Infrastructure Architect</div>
+        <p>Based in Bandung, Indonesia. I design and operate platform infrastructure — Kubernetes fleets, GitOps pipelines, and the network layer underneath them — and write about what actually happens when those systems meet production.</p>
+      </div>
+    </div>
+
+    <h2>Background</h2>
+    <p class="body">I've spent the last decade building and operating infrastructure platforms for teams that can't afford downtime — most recently leading platform architecture for a multi-region Kubernetes fleet spanning three cloud providers. Pras' Labs is where I write up what that work actually teaches, without the marketing gloss.</p>
+
+    <h2>Consulting</h2>
+    <p class="body">I take on a small number of engagements each quarter — platform architecture review, GitOps migration, incident-response process design. If your team is past the "getting started" stage and into "why does this keep happening at 3am," that's the work I do.</p>
+
+    <div class="services">
+      <div class="service"><div class="n">01</div><h3>Platform architecture review</h3><p>A structured audit of your Kubernetes/GitOps setup — where drift accumulates, where alerting is blind.</p></div>
+      <div class="service"><div class="n">02</div><h3>GitOps migration</h3><p>Moving a fleet from manual ops to reconciled, auditable, git-driven deployment.</p></div>
+      <div class="service"><div class="n">03</div><h3>Incident-response design</h3><p>Postmortem process, paging taxonomy, and the org habits that make both stick.</p></div>
+      <div class="service"><div class="n">04</div><h3>Technical writing</h3><p>Internal runbooks and architecture docs written by someone who's operated the system.</p></div>
+    </div>
+
+    <div class="stack">
+      <span class="tag">kubernetes</span><span class="tag">gitops</span><span class="tag">terraform</span><span class="tag">networking</span><span class="tag">platform-engineering</span><span class="tag">observability</span>
+    </div>
+
+    <div class="cta">
+      <div>
+        <h3>Have a project in mind?</h3>
+        <p>I respond to every inquiry personally, usually within two business days.</p>
+      </div>
+      <a class="btn" href="#">Get in touch →</a>
+    </div>
+
+    <div class="contact">contact: <a href="#">hello@pras.my.id</a> · Bandung, Indonesia (UTC+7)</div>
+  </main>
+</div>
+</body>
+</html>

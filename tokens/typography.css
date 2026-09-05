@@ -1,0 +1,29 @@
+:root {
+  /* Type scale — content is dense/technical, hierarchy carries weight */
+  --text-xs: 0.8125rem;   /* 13px — metadata, captions, tags */
+  --text-sm: 0.875rem;    /* 14px — nav, labels */
+  --text-base: 1.0625rem; /* 17px — long-form body */
+  --text-md: 1.1875rem;   /* 19px — lede paragraphs */
+  --text-lg: 1.375rem;    /* 22px — subheads */
+  --text-xl: 1.75rem;     /* 28px — H3 */
+  --text-2xl: 2.25rem;    /* 36px — H2 */
+  --text-3xl: 3rem;       /* 48px — H1 */
+  --text-4xl: 4rem;       /* 64px — hero */
+  --text-5xl: 5rem;       /* 80px — hero, large viewports */
+
+  --leading-tight: 1.15;
+  --leading-snug: 1.35;
+  --leading-body: 1.7;
+  --leading-relaxed: 1.8;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.04em;
+  --tracking-widest: 0.12em;
+}

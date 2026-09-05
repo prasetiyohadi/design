@@ -1,0 +1,106 @@
+/* Pras' Labs — color tokens. Dark mode is the default/primary experience. */
+:root,
+[data-theme="dark"] {
+  /* Base surfaces — warm near-black, not pure black */
+  --bg: #15130F;
+  --bg-raised: #1B1814;
+  --surface: #201C17;
+  --surface-hover: #29241D;
+  --surface-2: #262019;
+  --border: #37312723;
+  --border-hairline: #EDE6D91A;
+  --border-strong: #EDE6D933;
+
+  /* Text */
+  --text-primary: #EEE7DA;
+  --text-secondary: #A79E8E;
+  --text-tertiary: #766D5F;
+  --text-on-accent: #0B1210;
+
+  /* Accent — terminal prompt teal/electric blue */
+  --accent: #35D0C0;
+  --accent-strong: #57E0D2;
+  --accent-dim: #35D0C026;
+  --accent-border: #35D0C055;
+
+  /* Secondary accent — warm human touch (author notes, asides) */
+  --accent-warm: #E0995B;
+  --accent-warm-dim: #E0995B22;
+  --accent-warm-border: #E0995B4D;
+
+  /* Semantic */
+  --success: #8FBF7F;
+  --warning: #E0B15B;
+  --danger: #E0806B;
+  --link: var(--accent);
+  --link-hover: var(--accent-strong);
+
+  /* Code block */
+  --code-bg: #100F13;
+  --code-bg-inline: #221F2A;
+  --code-border: #33304099;
+  --code-fg: #D7D3C9;
+  --code-keyword: #C6A0F6;
+  --code-string: #A6DA95;
+  --code-function: #8AADF4;
+  --code-comment: #6E6B7A;
+  --code-number: #EED49F;
+  --code-tag: #ED8796;
+  --code-punct: #8B8796;
+
+  /* Elevation shadows — subtle, warm-tinted, dark UI */
+  --shadow-sm: 0 1px 2px #00000066;
+  --shadow-md: 0 4px 16px #00000080, 0 1px 2px #0000004d;
+  --shadow-lg: 0 12px 40px #00000099;
+
+  color-scheme: dark;
+}
+
+[data-theme="light"] {
+  --bg: #FBF9F4;
+  --bg-raised: #F4F0E7;
+  --surface: #FFFFFF;
+  --surface-hover: #F1ECE1;
+  --surface-2: #F4F0E7;
+  --border: #1B18141F;
+  --border-hairline: #1B181414;
+  --border-strong: #1B181433;
+
+  --text-primary: #1C1A15;
+  --text-secondary: #625B4C;
+  --text-tertiary: #8A8272;
+  --text-on-accent: #08110F;
+
+  --accent: #0E8C7D;
+  --accent-strong: #0B6F63;
+  --accent-dim: #0E8C7D1A;
+  --accent-border: #0E8C7D4D;
+
+  --accent-warm: #B56A2E;
+  --accent-warm-dim: #B56A2E1A;
+  --accent-warm-border: #B56A2E4D;
+
+  --success: #3F7A34;
+  --warning: #92661A;
+  --danger: #A23F2A;
+  --link: var(--accent);
+  --link-hover: var(--accent-strong);
+
+  --code-bg: #F4F1EC;
+  --code-bg-inline: #ECE7DC;
+  --code-border: #1B181422;
+  --code-fg: #2A281F;
+  --code-keyword: #8047C2;
+  --code-string: #2E7D32;
+  --code-function: #2159C7;
+  --code-comment: #8A8272;
+  --code-number: #9A6A17;
+  --code-tag: #B5473A;
+  --code-punct: #625B4C;
+
+  --shadow-sm: 0 1px 2px #1b18140f;
+  --shadow-md: 0 4px 16px #1b181414;
+  --shadow-lg: 0 12px 40px #1b18141f;
+
+  color-scheme: light;
+}
